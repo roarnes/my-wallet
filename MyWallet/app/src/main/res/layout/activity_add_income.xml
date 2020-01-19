@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIncomeActivityClasses.AddIncomeActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/add_income"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/title"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/date"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/amount"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/category"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/inputTitleInc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="@string/e_g_competition_prize"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonInputDateInc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_dropdown"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="@string/selectdate"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/inputAmountInc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="@string/e_g_1200"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbtn_groupInc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/rbtn_savingInc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/ic_saving"
+                        android:text="@string/savings"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_salaryInc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_salary"
+                        android:text="@string/salary"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_otherInc"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_other2"
+                        android:text="@string/other"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_saveIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+</ScrollView>

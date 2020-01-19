@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpenditureActivityClasses.AddExpenditureActivity"
+    android:padding="10dp"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/add_expenditure"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/title"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/date"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/amount"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/category"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/inputTitleExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="@string/e_g_fika"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonInputDateExp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_dropdown"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="@string/selectdate"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/inputAmountExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="@string/e_g_250"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbtn_groupExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/ic_food"
+                        android:text="@string/food"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_leisure"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_leisure"
+                        android:text="@string/leisure"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_edu"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_edu"
+                        android:text="@string/education"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_travel"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_travel"
+                        android:text="@string/travel"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_accom"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_accom"
+                        android:text="@string/accommodation"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_grocery"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_grocery"
+                        android:text="@string/grocery"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_fashion"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_fashion"
+                        android:text="@string/fashion"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_entertain"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_entertain"
+                        android:text="@string/entertain"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_otherExp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@drawable/ic_other"
+                        android:text="@string/other"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_saveExpenditure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+</ScrollView>
